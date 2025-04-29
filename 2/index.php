@@ -11,21 +11,21 @@
 <h1>íMPAR OU PAR</h1>
 
 <form method="post">
-    Valor 1: <input type="number" name="num" required><br>
+    Valor 1: <input type="number" name="num1" required><br>
     <button type="submit">Multiplicar</button>
 </form>
 <?php
-    function parOuImpar($num1){
-        if ($num % 2 == 0)
-        {$res = "par";}
-        else{$res = "ímpar";}
-    }
+ function parOuImpar($num1) {
+    if ($num1 % 2 == 0) 
+        {return "par";} 
+    else {return "ímpar";}
+}
 
-    if ($_SERVER["REQUEST_METHOD"] === "POST") { 
-        $num1 = $_POST["num"];
-        $res = parOuImpar($num);
-        echo "O número é $res";
-    }
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $num1 = $_POST["num1"];
+    $res = parOuImpar($num1);
+    echo "<p>O número $num1 é $res.</p>";
+}
 ?>
 
 </div>
