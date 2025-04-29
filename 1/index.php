@@ -21,10 +21,11 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        
         $num1 = $_POST["num1"];
         $num2 = $_POST["num2"];
         $mult = multiplicar($num1, $num2);
-    echo "O produto entre o primeiro e segundo valor é: $mult";
+        echo "O produto entre o primeiro e segundo valor é: $mult";
     }
 ?>
 
