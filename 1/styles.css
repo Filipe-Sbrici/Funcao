@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(31, 30, 36);
+    text-align: center;
+    color: rgb(206, 206, 216);
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-size: weight large;
+    margin-top: 20vh;
+}
+
+.chickenjockey
+{
+    color: rgb(206, 206, 216);
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    font-size: weight large;
+}
+
+h1
+{
+    font-weight: bold;
+    color: rgb(238, 203, 8);
+}
