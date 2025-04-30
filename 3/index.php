@@ -19,15 +19,19 @@
 <?php
  
  function maiorNumero($nuns) {
-    sort ($nuns);
+   return sort ($nuns);
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nuns = [$_POST["num1"], $_POST["num2"], $_POST["num3"]];
-    echo "<p>O maior número é $nuns[2].</p>";
+    $max = maiorNumero($nuns[2])
+    echo "<p>O maior número é $max.</p>";
 }
 ?>
 
 </div>
 </body>
 </html> 
+
+
+
