@@ -23,7 +23,7 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $num = $_POST["num"];
     $cel = converterParaCelsius($num);
-    echo "<p>$num graus fahrenheit é $nuns[2].</p>";
+    echo "<p>$num graus Fahrenheit é igual a " . round($cel, 2) . " graus Celsius.</p>";
 }
 ?>
 

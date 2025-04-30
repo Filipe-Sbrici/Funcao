@@ -17,14 +17,14 @@
     <button type="submit">Verificar</button>
 </form>
 <?php
- 
- function maiorNumero($nuns) {
-   return sort ($nuns);
+
+function maiorNumero($nuns) {
+    return max($nuns);
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nuns = [$_POST["num1"], $_POST["num2"], $_POST["num3"]];
-    $max = maiorNumero($nuns[2])
+    $max = maiorNumero($nuns);
     echo "<p>O maior número é $max.</p>";
 }
 ?>
