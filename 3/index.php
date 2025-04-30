@@ -14,7 +14,7 @@
     Valor 1: <input type="number" name="num1" required><br>
     Valor 2: <input type="number" name="num2" required><br>
     Valor 3: <input type="number" name="num3" required><br>
-    <button type="submit">Multiplicar</button>
+    <button type="submit">Verificar</button>
 </form>
 <?php
  
@@ -24,7 +24,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nuns = [$_POST["num1"], $_POST["num2"], $_POST["num3"]];
-    echo "<p>O maior número é $nuns[0].</p>";
+    echo "<p>O maior número é $nuns[2].</p>";
 }
 ?>
 

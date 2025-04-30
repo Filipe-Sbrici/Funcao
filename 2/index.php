@@ -12,7 +12,7 @@
 
 <form method="post">
     Valor 1: <input type="number" name="num1" required><br>
-    <button type="submit">Multiplicar</button>
+    <button type="submit">Verificar</button>
 </form>
 <?php
  
