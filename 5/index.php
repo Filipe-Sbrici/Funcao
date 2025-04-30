@@ -17,7 +17,7 @@
 <?php
  
  function validarIdade($num1) {
-    if ($num1 <= 18) 
+    if ($num1 < 18) 
         {return "menor de idade";} 
     else {return "maior de idade";}
 }
